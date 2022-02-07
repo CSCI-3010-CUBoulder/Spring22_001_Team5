@@ -5,10 +5,10 @@
 
 TEST_CASE ( "Sign testing", "[sign]") {
   REQUIRE( Sign(6) == 1 );
-  REQUIRE( Factorial(-1000) == -1 );
-  REQUIRE( Factorial(0) == 0 );
-  REQUIRE( Factorial(1234892379248) == 1 );
-  REQUIRE( Factorial(-2039873628719) == -1 );
+  REQUIRE( Sign(-1000) == -1 );
+  REQUIRE( Sign(0) == 0 );
+  REQUIRE( Sign(1234892379248) == 1 );
+  REQUIRE( Sign(-2039873628719) == -1 );
 }
 
 TEST_CASE("RemoveTwos is computed", "[RemoveTwos]")
