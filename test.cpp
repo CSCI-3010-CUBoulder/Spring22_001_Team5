@@ -4,11 +4,11 @@
 #include <vector>
 
 TEST_CASE ( "Sign testing", "[sign]") {
-  REQUIRE( Sign(6) == 1 );
-  REQUIRE( Sign(-1000) == -1 );
-  REQUIRE( Sign(0) == 0 );
-  REQUIRE( Sign(1234892379248) == 1 );
-  REQUIRE( Sign(-2039873628719) == -1 );
+  REQUIRE( Sign(6) == 1 ); //testing + 
+  REQUIRE( Sign(-1000) == -1 ); //testing -
+  REQUIRE( Sign(0) == 0 ); //testing 0
+  REQUIRE( Sign(1234892379248) == 1 ); //testing + 
+  REQUIRE( Sign(-2039873628719) == -1 ); //testing -
 }
 
 TEST_CASE("RemoveTwos is computed", "[RemoveTwos]")
