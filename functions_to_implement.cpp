@@ -19,10 +19,10 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 // divides an input integer by 2 until it is impossible to do so, then returns the final number.
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
 int RemoveTwos(int original){
-    while(original > 1 && original % 2 == 0){
-        original = original / 2;
+    while(original > 1 && original % 2 == 0){ 
+        original = original / 2; //check if can be divided do so
     }
-    return original;
+    return original; //or do not divide
 }
 
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
@@ -62,13 +62,13 @@ int Factorial(int n);
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num){
     if (num < 0){
-        return -1;
+        return -1; //num is negative
     }
     else if(num > 0){
-        return 1;
+        return 1; //num is positive
     }
     else{
-        return 0;
+        return 0; //edge case - num is 0
     }
 }
 
